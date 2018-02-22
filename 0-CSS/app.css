@@ -59,6 +59,13 @@ img {
 
 .hero {
   padding-top: 30px;
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .hero {
+    display: block;
+  }
 }
 
 .features {
