@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+
+.container
+	font-family: Montserrat
+	margin: 0 auto
+	width: 90%
+	max-width: 1200px
+
+.header
+	padding-top: 30px
+	padding-bottom: 30px
+	border-bottom: 6px solid $grey
+	display: flex
+	flex-flow: column wrap
+	justify-content: center
+	+media(medium)
+		flex-flow: row wrap
+	+e(logo)
+		align-self: center
+		min-width: 80px
+		min-height: 80px
+		width: 10%
+		height: 10%
+	+e(title)
+		color: $darkblue
+		text-align: center
+		+e(name)
+			font-size: 3em
+		+e(position)
+			font-size: 1.6em
+		+media(medium)
+			margin-left: auto
+			text-align: right
+
+.hero
+	padding-top: 30px
+
+.features
+	padding-top: 30px
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	+e(header)
+		font-size: 2em
+		width: 100%
+		color: $grey
+	+e(item)
+		display: flex
+		flex-flow: column wrap
+		text-align: center
+		width: 100%
+		margin-bottom: 40px
+		padding-bottom: 40px
+		border-bottom: 4px dashed $grey
+		color: $darkblue
+		+media(medium)
+			width: calc(50% - 10px)
+			+m(middle)
+				margin-left: 20px
+		+media(large)
+			flex: 1
+			+m(middle)
+				margin: 0 20px 40px
+		+e(header)
+			font-size: 3em
+			text-transform: uppercase
+			margin: 30px 0 15px
+		+e(link)
+			text-decoration: none
+			color: $darkblue
