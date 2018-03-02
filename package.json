@@ -19,6 +19,7 @@
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o 0-CSS 1-SASS",
     "watch": "npm-run-all -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o 0-CSS 1-SASS/app.sass --watch",
+    "watch:query": "onchange 0-CSS/app.css -- mqpacker 0-CSS/app.css 0-CSS/app.css",
     "watch:browser-sync": "browser-sync start --server --files 0-CSS/app.css index.html"
   },
   "keywords": [],
@@ -36,6 +37,8 @@
     "onchange": "^3.3.0",
     "rimraf": "^2.6.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "css-mqpacker": "^6.0.2"
+  },
   "optionalDependencies": {}
 }

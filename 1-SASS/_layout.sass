@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import url(https://fonts.googleapis.com/css?family=Montserrat)
 
 .container
 	font-family: Montserrat
@@ -31,12 +31,13 @@
 		+media(medium)
 			margin-left: auto
 			text-align: right
-
 .hero
 	padding-top: 30px
-	display: none
+	width: 100%
+	+e(img)
+		height: 100%
 	+media(medium)
-		display: block
+		width: 90%
 
 .features
 	padding-top: 30px

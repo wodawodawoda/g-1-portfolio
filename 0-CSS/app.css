@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 * {
   box-sizing: border-box;
 }
@@ -23,12 +23,6 @@ img {
   justify-content: center;
 }
 
-@media (min-width: 767px) {
-  .header {
-    flex-flow: row wrap;
-  }
-}
-
 .header__logo {
   align-self: center;
   min-width: 80px;
@@ -50,22 +44,13 @@ img {
   font-size: 1.6em;
 }
 
-@media (min-width: 767px) {
-  .header__title {
-    margin-left: auto;
-    text-align: right;
-  }
-}
-
 .hero {
   padding-top: 30px;
-  display: none;
+  width: 100%;
 }
 
-@media (min-width: 767px) {
-  .hero {
-    display: block;
-  }
+.hero__img {
+  height: 100%;
 }
 
 .features {
@@ -92,24 +77,6 @@ img {
   color: #2d3c49;
 }
 
-@media (min-width: 767px) {
-  .features__item {
-    width: calc(50% - 10px);
-  }
-  .features__item-middle {
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .features__item {
-    flex: 1;
-  }
-  .features__item-middle {
-    margin: 0 20px 40px;
-  }
-}
-
 .features__item__header {
   font-size: 3em;
   text-transform: uppercase;
@@ -120,5 +87,30 @@ img {
   text-decoration: none;
   color: #2d3c49;
 }
-
+@media (min-width: 767px) {
+  .header {
+    flex-flow: row wrap;
+  }
+  .header__title {
+    margin-left: auto;
+    text-align: right;
+  }
+  .hero {
+    width: 90%;
+  }
+  .features__item {
+    width: calc(50% - 10px);
+  }
+  .features__item-middle {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .features__item {
+    flex: 1;
+  }
+  .features__item-middle {
+    margin: 0 20px 40px;
+  }
+}
 /*# sourceMappingURL=app.css.map */
